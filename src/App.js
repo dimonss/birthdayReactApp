@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { translations, getDefaultLanguage } from "./translations";
+import botImg from './img/botImg.jpg'
 
 function App() {
     const [language, setLanguage] = useState(() => {
@@ -32,17 +33,18 @@ function App() {
             </div>
             <div className="card">
                 <h1 className="title">{t.title}</h1>
-                <p className="message">
-                    {t.message}
-                </p>
-                <a
-                    className="telegram-link"
-                    href="https://t.me/ChalyshBirthdayBot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    {t.sendGreeting}
-                </a>
+                <p className="message">{t.message}</p>
+                <div className="telegram-bot-block">
+                    <a
+                        className="telegram-link"
+                        href="https://t.me/ChalyshBirthdayBot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={botImg} alt="Telegram bot avatar" className="telegram-bot-avatar" />
+                        <span className="telegram-link-text">{t.sendGreeting}</span>
+                    </a>
+                </div>
             </div>
         </div>
     );
