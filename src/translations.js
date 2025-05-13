@@ -1,13 +1,13 @@
 export const translations = {
     en: {
         title: "Send Birthday Wishes!",
-        message: "Use our Telegram bot to send greetings to your family and friends! 🎉",
-        sendGreeting: "Generate a greeting"
+        message: "Use the Telegram bot to congratulate your family and friends! 🎉",
+        sendGreeting: "Generate congratulations"
     },
     ru: {
         title: "Поздравь с Днем Рождения!",
-        message: "Использую Телеграм бота для поздравления родных и близких! 🎉",
-        sendGreeting: "Сгенерироваь поздравление"
+        message: "Используйте Телеграм бота для поздравления родных и близких! 🎉",
+        sendGreeting: "Сгенерировать поздравление"
     }
 };
 
