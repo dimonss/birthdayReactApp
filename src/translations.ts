@@ -1,4 +1,6 @@
-export const translations = {
+import { Translations, Language } from './types';
+
+export const translations: Translations = {
     en: {
         title: "Send Birthday Wishes!",
         message: "Use the Telegram bot to congratulate your family and friends! 🎉",
@@ -11,7 +13,7 @@ export const translations = {
     }
 };
 
-export const getDefaultLanguage = () => {
+export const getDefaultLanguage = (): Language => {
     const browserLang = navigator.language.split('-')[0];
-    return translations[browserLang] ? browserLang : 'ru';
+    return translations[browserLang] ? browserLang as Language : 'ru';
 }; 

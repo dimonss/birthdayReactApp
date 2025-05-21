@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { translations, getDefaultLanguage } from "./translations";
-import botImg from './img/botImg.jpg'
+import { Language } from "./types";
+import botImg from './img/botImg.jpg';
 
-function App() {
-    const [language, setLanguage] = useState(() => {
-        const savedLanguage = localStorage.getItem('language');
+const App: React.FC = () => {
+    const [language, setLanguage] = useState<Language>(() => {
+        const savedLanguage = localStorage.getItem('language') as Language | null;
         return savedLanguage || getDefaultLanguage();
     });
 
@@ -48,6 +49,6 @@ function App() {
             </div>
         </div>
     );
-}
+};
 
-export default App;
+export default App; 
