@@ -44,7 +44,8 @@ type PageCardProps = {
 
 const PageCard: React.FC<PageCardProps> = ({ page }) => {
     const folderName = page.folderName;
-    const link = `/pages/${folderName}`;
+    const baseUrl = process.env.PUBLIC_URL || "";
+    const link = `${baseUrl}/pages/${folderName}`;
     const description = getDescription(page);
 
     return (
