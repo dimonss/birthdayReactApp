@@ -50,6 +50,9 @@ const PageCard: React.FC<PageCardProps> = ({ page }) => {
 
     return (
         <a href={link} target="_blank" rel="noopener noreferrer" className="page-card">
+            <div className="page-card-image">
+                <img src={link+"/img.jpg"} alt={`${getTitle(page)} preview`} loading="lazy" />
+            </div>
             <div className="page-card-top">
                 <span className="page-folder">/{folderName}</span>
                 <span className="page-arrow">→</span>
