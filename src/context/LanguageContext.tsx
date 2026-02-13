@@ -21,6 +21,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
     useEffect(() => {
         localStorage.setItem("language", language);
+        document.documentElement.lang = language;
     }, [language]);
 
     const value = useMemo(() => ({ language, setLanguage }), [language]);
