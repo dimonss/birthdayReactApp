@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import { store } from './store';
+import { LanguageProvider } from "./context/LanguageContext";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -12,7 +13,9 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <App />
+            <LanguageProvider>
+                <App />
+            </LanguageProvider>
         </Provider>
     </React.StrictMode>
 );
