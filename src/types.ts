@@ -1,9 +1,10 @@
 export interface Translation {
     title: string;
     message: string;
+    occasionsTitle: string;
+    occasionsText: string;
     sendGreeting: string;
     pagesTitle: string;
-    pagesSubtitle: string;
     pagesEmpty: string;
     pagesError: string;
     pagesLoading: string;

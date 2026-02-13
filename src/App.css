@@ -120,6 +120,31 @@
     max-width: 480px;
 }
 
+.hero-occasions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 14px;
+    background: rgba(230, 127, 99, 0.08);
+    border-radius: 14px;
+    border: 1px dashed rgba(230, 127, 99, 0.25);
+    max-width: 420px;
+}
+
+.hero-occasions-title {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brand-dark);
+    font-weight: 700;
+}
+
+.hero-occasions-text {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
 .telegram-link {
     margin-top: 8px;
     display: inline-flex;

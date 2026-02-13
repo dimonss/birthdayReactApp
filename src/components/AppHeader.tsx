@@ -5,8 +5,8 @@ const AppHeader: React.FC = () => {
     return (
         <header className="top-bar">
             <div className="brand">
-                <span className="brand-mark">BD</span>
-                <span className="brand-text">Birthday Hub</span>
+                <span className="brand-mark">CH</span>
+                <span className="brand-text">Congratulation Hub</span>
             </div>
             <LanguageSwitcher />
         </header>

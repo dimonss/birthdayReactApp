@@ -16,7 +16,6 @@ const PagesSection: React.FC = () => {
             <div className="section-head">
                 <div>
                     <h2>{t.pagesTitle}</h2>
-                    <p>{t.pagesSubtitle}</p>
                 </div>
                 <div className="status-pill">
                     {isLoading ? t.pagesLoading : `${pages.length} pages`}

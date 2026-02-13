@@ -2,21 +2,23 @@ import { Translations, Language } from './types';
 
 export const translations: Translations = {
     en: {
-        title: "Send Birthday Wishes!",
-        message: "Use the Telegram bot to congratulate your family and friends!",
+        title: "Celebration Greetings App",
+        message: "Create heartfelt messages for birthdays and other big moments with the Telegram bot.",
+        occasionsTitle: "Occasions supported",
+        occasionsText: "Birthday, Anniversary, Wedding, New Baby, Valentine's Day",
         sendGreeting: "Generate congratulations",
         pagesTitle: "Birthday Pages",
-        pagesSubtitle: "Pick a page and share a direct link to their celebration.",
         pagesEmpty: "No pages yet. Check back soon.",
         pagesError: "Couldn't load pages. Please try again later.",
         pagesLoading: "Loading pages…"
     },
     ru: {
-        title: "Поздравь с Днем Рождения!",
-        message: "Используйте Телеграм бота для поздравления родных и близких!",
+        title: "Приложение для поздравлений",
+        message: "Создавайте тёплые поздравления к любому важному событию через Телеграм бота.",
+        occasionsTitle: "Поводы для поздравлений",
+        occasionsText: "День рождения, Юбилей, Свадьба, Рождение ребёнка, День влюблённых",
         sendGreeting: "Сгенерировать поздравление",
         pagesTitle: "Страницы поздравлений",
-        pagesSubtitle: "Выберите страницу и отправьте персональную ссылку имениннику.",
         pagesEmpty: "Пока нет страниц. Загляните позже.",
         pagesError: "Не удалось загрузить страницы. Попробуйте позже.",
         pagesLoading: "Загружаем страницы…"

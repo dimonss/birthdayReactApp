@@ -15,6 +15,10 @@ const HeroSection: React.FC = () => {
                 <div className="hero-content">
                     <h1 className="title">{t.title}</h1>
                     <p className="message">{t.message}</p>
+                    <div className="hero-occasions">
+                        <span className="hero-occasions-title">{t.occasionsTitle}</span>
+                        <span className="hero-occasions-text">{t.occasionsText}</span>
+                    </div>
                     <a
                         className="telegram-link"
                         href={TELEGRAM_BOT_URL}
